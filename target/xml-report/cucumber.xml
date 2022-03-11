@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.453">
+    <testcase classname="Appointment api test" name="Validate appointments by userName with database" time="3.248">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given user connects to the database.........................................passed
+And user selects all firstname column data..................................passed
+And user verify "eymen" with the database...................................failed
+Then close the database connection..........................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at utilities.DatabaseUtility.executeQuery(DatabaseUtility.java:176)
+	at utilities.DatabaseUtility.getColumnData(DatabaseUtility.java:113)
+	at stepdefinitions.US_07_DB_AppointmentStepDefs.user_verify_with_the_database(US_07_DB_AppointmentStepDefs.java:25)
+	at ✽.user verify "eymen" with the database(file:///C:/Users/msi/Desktop/medunna/./src/test/resources/features/US_07_Appointment.feature:40)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

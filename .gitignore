@@ -1,5 +1,2 @@
-.idea
-*.iml
-target
-.DS_Store
-test-output
+configuration.properties
+Hooks
